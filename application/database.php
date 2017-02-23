@@ -17,9 +17,9 @@ return [
     // 数据库名
     'database'       => 'bxg',
     // 用户名
-    'username'       => 'root',
+    'username'       => 'tom',
     // 密码
-    'password'       => 'feiyue',
+    'password'       => '123',
     // 端口
     'hostport'       => '3306',
     // 连接dsn
