@@ -17,7 +17,7 @@ return [
     // 数据库名
     'database'       => 'bxg',
     // 用户名
-    'username'       => 'jerry',
+    'username'       => 'root',
     // 密码
     'password'       => 'feiyue',
     // 端口
