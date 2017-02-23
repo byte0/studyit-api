@@ -15,14 +15,5 @@
 define('APP_PATH', __DIR__ . '/../application/');
 // 绑定模块
 define('BIND_MODULE','api');
-
-// $requestUri = $_SERVER['REQUEST_URI'];
-
-// $dbName = empty(explode('/', $requestUri)[1]) ?
-//     'bxg' : !strstr(explode('/', $requestUri)[1], 'v') ?
-//     'bxg' : explode('/', $requestUri)[1];
-
-// define('DB_NAME', $dbName);
-
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';

@@ -28,7 +28,7 @@ class Uploader extends Base {
         $info = $file->rule('uniqid')
             ->validate(['ext'=>'jpg,png,gif'])
             ->move(RUNTIME_PATH . 'uploads');
-
+        
         if($info) {
             // 文件名
             $filename = $info->getFilename();
@@ -37,7 +37,7 @@ class Uploader extends Base {
             // 上传至阿里OSS
             $result = $this->upload()->uploadFile('studyit', 'images/avatar/'.$filename, $pathname);
 
-            unlink($pathname);
+            // unlink($pathname);
 
             Db::name('teacher')
                 ->where(['tc_id' => $tc_id])
@@ -77,7 +77,7 @@ class Uploader extends Base {
             // 上传至阿里OSS
             $result = $this->upload()->uploadFile('studyit', 'images/cover/'.$filename, $pathname);
 
-            unlink($pathname);
+            // unlink($pathname);
 
             Db::name('course')
                 ->where(['cs_id' => $cs_id])
